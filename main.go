@@ -8,9 +8,6 @@ type Student struct {
 	Score  []float64
 }
 
-
-var students []Student
-
 func main() {
      students := []Student{
           {
