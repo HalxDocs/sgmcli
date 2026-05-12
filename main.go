@@ -13,6 +13,7 @@ func calculateaverae(scores []float64) float64 {
 	for _, score := range scores {
 		total += score
 	}
+	return total / float64(len(scores))
 }
 
 func main() {
