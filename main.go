@@ -8,6 +8,13 @@ type Student struct {
 	Score  []float64
 }
 
+func calculateaverae(scores []float64) float64 {
+	total := 0.0
+	for _, score := range scores {
+		total += score
+	}
+}
+
 func main() {
      students := []Student{
           {
