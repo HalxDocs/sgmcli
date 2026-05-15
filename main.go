@@ -27,13 +27,13 @@ func main() {
 		  },
 
 		  {
-			Name: "Nora", Score: []float64{95, 88, 52},
+			Name: "Norah", Score: []float64{95, 88, 52},
 		  },
 	 }
 
 		  for _, s := range students {
 			avg := calculateaverage(s.Score)
-			fmt.Printf()
+			fmt.Printf("%s - Average:%.2f\n", s.Name, avg)
 		  }
 
 }
