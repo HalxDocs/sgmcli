@@ -16,6 +16,8 @@ func calculateaverage(scores []float64) float64 {
 	return total / float64(len(scores))
 }
 
+func letterGrade 
+
 func main() {
      students := []Student{
           {
