@@ -47,6 +47,18 @@ for _, s := range students {
 }
 }
 
+func topStudent(students []Student) Student {
+	top := students[0]
+
+	for _, s := range students {
+		if calculateaverage(s.Score) > calculateaverage(top.Score) {
+			top = s
+		}
+	}
+
+	return top
+}
+
 func main() {
      students := []Student{
           {
