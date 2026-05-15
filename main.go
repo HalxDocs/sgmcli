@@ -62,10 +62,6 @@ func main() {
 		  },
 	 }
 
-		  for _, s := range students {
-			avg := calculateaverage(s.Score)
-			grade := letterGrade(avg)
-			fmt.Printf("%s - Average:%.2f - Grade: %s\n", s.Name, avg, grade)
-		  }
+    printReportCard(students)
 
 }
