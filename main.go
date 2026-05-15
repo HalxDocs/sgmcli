@@ -32,8 +32,8 @@ func main() {
 	 }
 
 		  for _, s := range students {
-			avg
-			fmt.Println(s.Name, s.Score)
+			avg := calculateaverage(s.Score)
+			fmt.Printf()
 		  }
 
 }
