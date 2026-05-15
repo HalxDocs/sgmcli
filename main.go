@@ -16,7 +16,19 @@ func calculateaverage(scores []float64) float64 {
 	return total / float64(len(scores))
 }
 
-func letterGrade 
+func letterGrade (avg float64) string {
+	if avg >= 70 {
+		return "A"
+	} else if avg >= 60 {
+		return "B"
+	} else if avg >= 50 {
+		return "C"
+	} else if avg >= 40 {
+		return  "D"
+	} else {
+		return "F"
+	}
+}
 
 func main() {
      students := []Student{
@@ -35,7 +47,8 @@ func main() {
 
 		  for _, s := range students {
 			avg := calculateaverage(s.Score)
-			fmt.Printf("%s - Average:%.2f\n", s.Name, avg)
+			grade := letterGrade(avg)
+			fmt.Printf("%s - Average:%.2f - Grade: %s\n", s.Name, avg, grade)
 		  }
 
 }
