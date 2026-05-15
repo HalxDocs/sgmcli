@@ -8,7 +8,7 @@ type Student struct {
 	Score  []float64
 }
 
-func calculateaverae(scores []float64) float64 {
+func calculateaverage(scores []float64) float64 {
 	total := 0.0
 	for _, score := range scores {
 		total += score
@@ -32,6 +32,7 @@ func main() {
 	 }
 
 		  for _, s := range students {
+			avg
 			fmt.Println(s.Name, s.Score)
 		  }
 
