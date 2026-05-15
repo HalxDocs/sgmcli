@@ -76,4 +76,10 @@ func main() {
 
     printReportCard(students)
 
+	best :=topStudent(students)
+	avg := calculateaverage(best.Score)
+	fmt.Printf("\n Top Student: %s with an average of %.2f\n", best.Name, avg)
+
+
 }
+
